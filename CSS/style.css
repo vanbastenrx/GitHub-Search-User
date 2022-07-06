@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Condensed&family=Varela+Round&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +8,21 @@
 
 .container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: cadetblue;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header {
   font-size: 2em;
+  letter-spacing: 4px;
   font-weight: bold;
   color: rebeccapurple;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Condensed', sans-serif;
   margin-top: 1em;
 }
 
@@ -53,9 +57,18 @@
   outline: none;
 }
 
+
 ::placeholder {
-  opacity: 1;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+input {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input[type="text"] {
+  font-size: 20px;
 }
 
 .btn--buscar {
@@ -68,12 +81,18 @@
   border-radius: 10px;
   margin-right: 1em;
   background-color: rebeccapurple;
-  color: yellow;
+  color: white;
   cursor: pointer;
+  border: none;
+  letter-spacing: 4px;
+}
+
+.btn--buscar:hover {
+  color: yellow;
+  box-shadow: 0px 7px 7px rgb(192, 44, 246);
 }
 
 .apresentacao {
-  box-shadow: 10px 10px 10px rgb(54, 55, 55);
   width: 30rem;
   height: 100vh;
   border-radius: 1em;
@@ -83,21 +102,24 @@
   align-items: center;
   justify-content: center;
   margin: 1em 0;
+  box-shadow: 10px 10px 10px rgb(54, 55, 55);
+  opacity: 0;
 }
 
 .githubHead {
-
+  width: 100%;
   margin: 1em;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-around; */
 }
+
 
 .github--username a {
   text-decoration: none;
 }
 
-.githubNome {
+.github--nome {
   margin-left: .5em;
   font-size: 1.5em;
   font-weight: bold;
@@ -106,42 +128,42 @@
 
 .github--username {
   margin-left: 1em;
-  color: rebeccapurple;
-  margin-top: .1em;
-  font-size: 16px;
+  color: black;
+  font-size: 18px;
 }
 
 .foto--perfil img {
+  margin-left: 1em;
   height: 150px;
   width: 150px;
   border-radius: 50%;
 }
 
 .gitBio {
-
   width: 600px;
-  height: 500px;
+  height: 300px;
+  margin: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .github--bio {
   height: 100px;
+  font-size: 20px;
   color: rebeccapurple;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin: 0 1em 2em 1em;
   border-radius: 5px;
 }
 
 .github--repo {
-
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 80px;
   width: 400px;
-  border-radius: 10px;
 }
 
 .repos {
@@ -153,25 +175,137 @@
   font-weight: bold;
 }
 
+.repositorio, .seguidores, .seguindo {
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
 .social--media {
-  height: 200px;
+  height: 5em;
+  font-size: 16px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 20em 8em;
   row-gap: 1.2em;
-  margin-top: 2em;
+  /* margin: 2em 0 5em 0; */
 }
 
 .local, .twitter, .portifolio, .empresa {
   display: flex;
   align-items: center;
-  font-size: 16px;
-}
-
-.local a, .twitter a, .portifolio a, .empresa a {
-  text-decoration: none;
-  color: black;
 }
 
 .local img, .twitter img, .portifolio img, .empresa img {
-  width: 1.5em;
+  margin-right: .3em;
+}
+
+@media screen and (max-width: 769px) {
+  .apresentacao {
+    width: 25rem;
+  }
+
+  .buscar {
+    width: 25rem;
+  }
+
+  .github--nome {
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: rebeccapurple;
+  }
+
+  .foto--perfil img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+
+  .githubHead, .gitBio, .social--media {
+    width: 15rem;
+  }
+
+  .social--media {
+    width: 20rem;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 20em 1em;
+    row-gap: 1.2em;
+    margin: 2em 0 0 1em;
+  }
+}
+
+@media screen and (max-width: 415px) {
+
+  .header {
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: rebeccapurple;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .apresentacao {
+    width: 15rem;
+    height: 32rem;
+  }
+
+  .gitBio {
+    height: 10rem;
+  }
+
+  .buscar {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    width: 15rem;
+    height: 2rem;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .buscar--texto img {
+    margin-left: 1em;
+  }
+
+  .buscar--texto input {
+    font-size: 16px;
+  }
+
+  .github--repo {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+.repos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+  .repositorio, .seguidores, .seguindo {
+    width: 10em;
+    height: 1.5em;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+
+
+  .qtd--repo, .qtd--seguidores, .qtd--seguindo {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .social--media {
+    height: 15em;
+    width: 15em;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  }
 }
