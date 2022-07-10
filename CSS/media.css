@@ -1,198 +1,159 @@
-/* * {
-  margin: 0;
-  padding: 0;
+* {
+  overflow-x: hidden;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+@media only screen 
+  
+  and (max-width: 568px) and (min-width: 320px){
+
+    .header {
+      font-size: 1em;
+      letter-spacing: 4px;
+      font-weight: bold;
+      color: rebeccapurple;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    
+
+    .githubHead {
+      height: 12em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .github--nome {
+      font-size: 1em;
+    }
+
+    .github--username {
+      margin-left: .5em;
+    }
+
+    .foto--perfil img {
+      margin-left: 1em;
+      height: 100px;
+      width: 110px;
+      border-radius: 50%;
+    }
+  
+    .apresentacao {
+      width: 15rem;
+      height: 35rem;
+    }
+  
+    .gitBio {
+      height: 15rem;
+      width: 15rem;
+    }
+
+    .github--bio {
+      height: 15rem;
+      font-size: 16px;
+    }
+  
+    .buscar {
+      display: flex;
+      justify-content: space-around;
+      background-color: antiquewhite;
+      width: 15rem;
+      height: 2rem;
+      align-items: center;
+      margin-top: 1em;
+    }
+  
+    .buscar--texto img {
+      margin-left: 1em;
+    }
+  
+    .buscar--texto input {
+      font-size: 16px;
+    }
+
+    .btn--buscar {
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+  
+    .github--repo {
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+    }
+
+  
+  .repos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+    .repositorio, .seguidores, .seguindo {
+      width: 10em;
+      height: 1.5em;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+  
+  
+    .qtd--repo, .qtd--seguidores, .qtd--seguindo {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    .social--media {
+      height: 15em;
+      width: 15em;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+    }
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 450px;
-  margin-bottom: 1em;
+
+@media screen and (max-width: 415px) {
+
+  
 }
 
-.header {
-  letter-spacing: 4px;
-  font-size: 2em;
-  font-weight: bold;
-  color: rebeccapurple;
-  margin-left: 1em;
+/* @media screen and (max-width: 769px) {
+  .apresentacao {
+    width: 25rem;
+    height: 2rem;
+  }
+
+  .buscar {
+    width: 25rem;
+  }
+
+  .github--nome {
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: rebeccapurple;
+  }
+
+  .foto--perfil img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
 }
 
-.buscar {
-  height: 2em;
-  width: 700px;
-  background-color: antiquewhite;
-  border-radius: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.buscar--texto {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
+  .githubHead, .gitBio, .social--media {
+    width: 15rem;
+  }
 
-.buscar--texto img {
-  margin-left: 1em;
-}
-
-.buscar--texto input {
-  margin-left: 1.5em;
-  height: 100%;
-  width: 300px;
-  border: none;
-  outline: none;
-  font-size: 0.8em;
-  background-color: antiquewhite;
-}
-
-::placeholder {
-  opacity: .8;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.btn--buscar {
-  height: 1.5em;
-  width: 80px;
-  background-color: red;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1em;
-  font-weight: bold;
-  margin-right: .8em;
-  cursor: pointer;
-}
-
-.apresentacao {
-  background-color: aquamarine;
-  width: 700px;
-  height: 550px;
-  border-radius: .8em;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.foto--perfil {
-  width: 130px;
-  height: 130px;
-  border: 1px solid black;
-  border-radius: 130px;
-  object-fit: contain;
-}
-
-.foto--perfil img {
-  object-fit: contain;
-  width: 130px;
-  height: 130px;
-  border-radius: 130px;
-}
-
-.githubHead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 550px;
-  margin-top: 2em;
-}
-
-.biografia {
-  height: 100%;
-  width: 400px;
-  position: relative;
-}
-
-.githubNome {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rebeccapurple;
-}
-
-.github--username {
-  color: rebeccapurple;
-  margin-top: .1em;
-  font-size: 16px;
-}
-
-.github--username a {
-  text-decoration: none;
-}
-
-.gitBio {
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.github--bio {
-  width: 430px;
-  height: 2em;
-  color: black;
-  font-weight: bold;
-  background-color: aquamarine;
-  margin-top: -1em;
-  margin-bottom: 2em;
-  border-radius: 5px;
-}
-
-.github--repo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: aquamarine;
-  height: 80px;
-  width: 400px;
-  margin-right: 2em;
-  border-radius: 10px;
-}
-
-.repos {
-  font-size: 16px;
-}
-
-.qtd--repo, .qtd--seguidores, .qtd--seguindo {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.social--media {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 1.2em;
-  margin-top: 2em;
-}
-
-.local, .twitter, .portifolio, .empresa {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
-
-.local a, .twitter a, .portifolio a, .empresa a {
-  text-decoration: none;
-  color: black;
-}
-
-.local img, .twitter img, .portifolio img, .empresa img {
-  margin-right: .5em;
-  width: 2em;
-}
- */
+  .social--media {
+    width: 20rem;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 20em 1em;
+    row-gap: 1.2em;
+    margin: 2em 0 0 1em;
+  }
+} */
