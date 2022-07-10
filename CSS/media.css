@@ -17,14 +17,14 @@
     
 
     .githubHead {
-      height: 12em;
+      height: 15em;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     .github--nome {
-      font-size: 1em;
+      font-size: .9em;
     }
 
     .github--username {
@@ -33,12 +33,15 @@
 
     .foto--perfil img {
       margin-left: 1em;
-      height: 100px;
-      width: 110px;
+      height: 90px;
+      width: 90px;
       border-radius: 50%;
     }
   
     .apresentacao {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 15rem;
       height: 35rem;
     }
