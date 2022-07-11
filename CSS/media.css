@@ -52,7 +52,7 @@
     }
 
     .github--bio {
-      height: 15rem;
+      height: 25rem;
       font-size: 16px;
     }
   
@@ -80,9 +80,12 @@
     }
   
     .github--repo {
-      height: 10em;
-      display: flex;
-      flex-direction: column;
+      overflow: hidden;
+      height: 15em;
+      width: 15em;
+      display: grid;
+      /* grid-template-columns: 1fr; */
+      
     }
 
   
