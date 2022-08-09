@@ -8,16 +8,16 @@
 
 body {
   background-color: cadetblue;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
-/*  */
+
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: 100%;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .head {
@@ -31,7 +31,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5em;
   width: 500px;
 }
 
@@ -40,7 +39,6 @@ body {
   letter-spacing: 4px;
   font-weight: bold;
   color: rebeccapurple;
-  font-family: 'Roboto Condensed', sans-serif;
   margin-top: 1em;
 }
 
@@ -55,22 +53,15 @@ body {
   margin-top: 1em;
 }
 
-.buscar--texto {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
 
 .buscar--texto img {
   margin-left: .5em;
 }
 
 .buscar--texto input {
-  width: 250px;
+  width: 12rem;
   font-size: 16px;
-  font-weight: bold;
-  margin-left: 1em;
-  text-decoration: none;
+  margin-left: .5em;
   background-color: antiquewhite;
   border: none;
   outline: none;

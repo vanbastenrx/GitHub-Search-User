@@ -1,5 +1,6 @@
 * {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media only screen 
@@ -67,16 +68,20 @@
     }
   
     .buscar--texto img {
-      margin-left: 1em;
+      margin-left: .5em;
+      height: .7em;
     }
   
     .buscar--texto input {
-      font-size: 16px;
+      width: 8rem;
+      font-size: 14px;
+      font-weight: bold;
     }
 
     .btn--buscar {
       letter-spacing: 0;
       font-size: 12px;
+      width: 5em;
     }
   
     .github--repo {
@@ -119,47 +124,3 @@
       flex-direction: column;
     }
 }
-
-
-@media screen and (max-width: 415px) {
-
-  
-}
-
-/* @media screen and (max-width: 769px) {
-  .apresentacao {
-    width: 25rem;
-    height: 2rem;
-  }
-
-  .buscar {
-    width: 25rem;
-  }
-
-  .github--nome {
-    margin-left: 1em;
-    font-size: 1em;
-    font-weight: bold;
-    color: rebeccapurple;
-  }
-
-  .foto--perfil img {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-}
-
-
-  .githubHead, .gitBio, .social--media {
-    width: 15rem;
-  }
-
-  .social--media {
-    width: 20rem;
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: 20em 1em;
-    row-gap: 1.2em;
-    margin: 2em 0 0 1em;
-  }
-} */
