@@ -3,7 +3,7 @@ Uma tela simples com HTML CSS e JS puro usando a API do github para buscar usuá
 
 <br>
 
-<strong>É só digitar no usuário no campo de pesquisa e pronto, bem simples.</strong>
+<strong>É só digitar o usuário no campo de pesquisa e pronto, bem simples.</strong>
 
 <br>
 
