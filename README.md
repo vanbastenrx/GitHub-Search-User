@@ -1,5 +1,5 @@
 # GitHub-Search-User
-Uma tela simples com HTML CSS e JS puro usando a API do github para buscar usuários.
+Uma tela simples com HTML CSS e JS puro usando a API do github para buscar usuários - <link>https://api.github.com/users/</link.
 
 <br>
 
