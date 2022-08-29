@@ -1,126 +1,16 @@
-* {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+@media only screen and (max-width: 37.5rem) {
 
-@media only screen 
-  
-  and (max-width: 568px) and (min-width: 320px){
-
-    .header {
-      font-size: 1em;
-      letter-spacing: 4px;
-      font-weight: bold;
-      color: rebeccapurple;
-      font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    
-
-    .githubHead {
-      height: 15em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .github--nome {
-      font-size: .9em;
-    }
-
-    .github--username {
-      margin-left: .5em;
-    }
-
-    .foto--perfil img {
-      margin-left: 1em;
-      height: 90px;
-      width: 90px;
-      border-radius: 50%;
-    }
-  
-    .apresentacao {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 15rem;
-      height: 35rem;
-    }
-  
-    .gitBio {
-      height: 15rem;
-      width: 15rem;
-    }
-
-    .github--bio {
-      height: 25rem;
-      font-size: 16px;
-    }
-  
-    .buscar {
-      display: flex;
-      justify-content: space-around;
-      background-color: antiquewhite;
-      width: 15rem;
-      height: 2rem;
-      align-items: center;
-      margin-top: 1em;
-    }
-  
-    .buscar--texto img {
-      margin-left: .5em;
-      height: .7em;
-    }
-  
-    .buscar--texto input {
-      width: 8rem;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .btn--buscar {
-      letter-spacing: 0;
-      font-size: 12px;
-      width: 5em;
-    }
-  
-    .github--repo {
-      overflow: hidden;
-      height: 15em;
-      width: 15em;
-      display: grid;
-      /* grid-template-columns: 1fr; */
-      
-    }
-
-  
-  .repos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  
+  .githubHead {
+    flex-direction: column;
   }
-  
-    .repositorio, .seguidores, .seguindo {
-      width: 10em;
-      height: 1.5em;
-      font-size: 16px;
-      font-weight: bold;
-      letter-spacing: 4px;
-    }
-  
-  
-    .qtd--repo, .qtd--seguidores, .qtd--seguindo {
-      font-size: 16px;
-      font-weight: bold;
-    }
-  
-    .social--media {
-      height: 15em;
-      width: 15em;
-      font-size: 16px;
-      display: flex;
-      flex-direction: column;
-    }
+
+  .github--repo {
+    flex-direction: column;
+  }
+
+  .social--media {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

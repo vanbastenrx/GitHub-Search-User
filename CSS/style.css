@@ -3,7 +3,15 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+ 
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
@@ -31,37 +39,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 70rem;
 }
 
 .header {
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: 4px;
   font-weight: bold;
   color: rebeccapurple;
-  margin-top: 1em;
+  margin-top: 10rem;
 }
 
 .buscar {
   display: flex;
   justify-content: space-between;
   background-color: antiquewhite;
-  width: 450px;
+  width: 30rem;
   height: 3rem;
-  border-radius: 1em;
+  border-radius: 10rem;
   align-items: center;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 
 .buscar--texto img {
-  margin-left: .5em;
+  margin-left: .5rem;
 }
 
 .buscar--texto input {
-  width: 12rem;
-  font-size: 16px;
-  margin-left: .5em;
+  width: 15rem;
+  font-size: 1.1rem;
+  margin-left: .5rem;
   background-color: antiquewhite;
   border: none;
   outline: none;
@@ -70,7 +78,7 @@ body {
 
 ::placeholder {
   font-family: 'Roboto Condensed', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 input {
@@ -78,23 +86,24 @@ input {
 }
 
 input[type="text"] {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .btn--buscar {
   font-weight: bold;
   width: 5rem;
-  height: 2em;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  margin-right: 1em;
+  border-radius: 100px;
+  margin-right: 1rem;
   background-color: rebeccapurple;
   color: white;
   cursor: pointer;
   border: none;
-  letter-spacing: 3px;
+
+  font-size: 1rem;
 }
 
 .btn--buscar:hover {
@@ -102,26 +111,26 @@ input[type="text"] {
 }
 
 .apresentacao {
-  width: 30rem;
-  height: 32rem;
-  border-radius: 1em;
+  max-width: 70rem;
+  border-radius: 1rem;
   background-color: bisque;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  position: relative;
-  margin: 1em 0;
-  box-shadow: 10px 10px 10px rgb(54, 55, 55);
+  justify-content: center;
+  margin: 1rem 0;
+  box-shadow: .5rem .5rem .5rem rgb(54, 55, 55);
   opacity: 0;
+
+
 }
 
 .githubHead {
   width: 100%;
-  height: 10rem;
-  margin: 1em;
+  margin: 2rem 1rem;
   display: flex;
   align-items: center;
+
 }
 
 
@@ -130,29 +139,28 @@ input[type="text"] {
 }
 
 .github--nome {
-  margin-left: .5em;
-  font-size: 1.5em;
+  margin-left: .5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: rebeccapurple;
 }
 
 .github--username {
-  margin-left: 1em;
+  margin-left: 1rem;
   color: black;
-  font-size: 18px;
+  font-size: 1.4rem;
 }
 
 .foto--perfil img {
   margin-left: 1em;
-  height: 150px;
-  width: 150px;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
 }
 
 .gitBio {
-  width: 600px;
-  height: 200px;
-  margin: 2em;
+  width: 100%;
+  margin: 5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,51 +168,55 @@ input[type="text"] {
 }
 
 .github--bio {
-  height: 100px;
-  font-size: 20px;
+  font-size: 2rem;
   color: rebeccapurple;
   font-weight: bold;
-  margin: 0 1em 2em 1em;
-  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 .github--repo {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 80px;
-  width: 400px;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .repos {
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .qtd--repo, .qtd--seguidores, .qtd--seguindo {
-  font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .repositorio, .seguidores, .seguindo {
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .social--media {
-  height: 5em;
-  font-size: 16px;
-  display: grid;
-  grid-template-columns: 20em 8em;
-  row-gap: 1.2em;
-  /* margin: 2em 0 5em 0; */
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 2rem;
 }
 
 .local, .twitter, .portifolio, .empresa {
   display: flex;
   align-items: center;
+  padding: 1rem;
+
 }
 
 .local img, .twitter img, .portifolio img, .empresa img {
-  margin-right: .3em;
+  margin-right: .3rem;
 }
 
