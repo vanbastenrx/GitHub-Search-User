@@ -13,4 +13,12 @@
     align-items: center;
     justify-content: center;
   }
+
+  .repos:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .gitBio {
+    padding: 0 2rem;
+  }
 }
