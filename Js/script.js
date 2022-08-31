@@ -20,6 +20,9 @@ const local = document.querySelector('.location');
 const twitter = document.querySelector('.twit');
 const portifolio = document.querySelector('.port');
 const work = document.querySelector('.work');
+const popup = document.querySelector('.popup');
+const btnModal = document.querySelector('.btn-modal');
+const autoCompleteList = document.querySelector('.autocomplete-list');
 let img = document.createElement('img');
 let imagem = document.querySelector('.foto--perfil');
 
@@ -29,22 +32,34 @@ const githubUser = async (user) => {
     // Chamada da API
     const response = await fetch(`${API_URL}${user}`);
     const data = await response.json();
+    console.log(data);
 
     // Erros
     if (!response) throw new Error(`${message}`);
     // Render no HTML
     renderUser(data);
+    autoComplete(data);
+
   } catch (err) {
     console.error(err.message);
   }
 };
 
+
+
 // Se o usuário não existir.
 const userNotExist = () => {
-  const user = 'Usuário não encontrado!';
-  input.placeholder = user;
+  popup.style.opacity = 1;
+  popup.style.visibility = 'visible';
   apresentacao.style.opacity = 0;
 };
+
+btnModal.addEventListener('click', (e) => {
+  e.preventDefault();
+  popup.style.opacity = 0;
+  popup.style.visibility = 'hidden';
+});
+
 
 const renderUser = data => {
 
@@ -80,7 +95,7 @@ const renderUser = data => {
 // Input + botão
 btn.addEventListener('submit', (e) => {
   e.preventDefault();
-  input.value === '' ? false :
+  input.value === '' ? false : 
   githubUser(input.value.toLowerCase());
   input.value = '';
   input.placeholder = 'Buscar usuário...';
