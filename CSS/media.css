@@ -1,5 +1,43 @@
 @media only screen and (max-width: 37.5rem) {
 
+  body {
+    height: 100vh;
+  }
+
+  .apresentacao {
+    margin-bottom: 2rem;
+  }
+
+  .header {
+    padding-top: 5rem;
+  }
+
+  .github--nome {
+    font-size: 2rem;
+  }
+
+  .gitBio {
+    margin-top: 2rem;
+  }
+
+  .github--bio {
+    font-size: 1.7rem;
+  }
+
+  .github--repo {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+
+  }
+
+  .social--media {
+    font-size: 1.2rem;
+  }
+
+  .local, .twitter, .portifolio, .empresa {
+    padding: .2rem;
+  }
+
   .githubHead {
     flex-direction: column;
   }
@@ -24,5 +62,9 @@
 
   .modal {
     min-width: 30rem;
+  }
+
+  .footer {
+    margin: 0;
   }
 }
