@@ -32,13 +32,11 @@ const githubUser = async (user) => {
     // Chamada da API
     const response = await fetch(`${API_URL}${user}`);
     const data = await response.json();
-    console.log(data);
 
     // Erros
     if (!response) throw new Error(`${message}`);
     // Render no HTML
     renderUser(data);
-    autoComplete(data);
 
   } catch (err) {
     console.error(err.message);
