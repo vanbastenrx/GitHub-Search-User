@@ -6,7 +6,7 @@
 
   .apresentacao {
     max-width: 30rem;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
   }
 
   .header {
@@ -17,7 +17,7 @@
   .buscar {
     width: 30rem;
     height: 3rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .buscar--texto input {
@@ -33,20 +33,20 @@
   }
 
   .foto--perfil img {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
 
   .github--nome {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .gitBio {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .github--bio {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .github--repo {
@@ -98,7 +98,7 @@
   }
 
   .footer {
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
   }
 }
 
