@@ -6,7 +6,7 @@
 
   .apresentacao {
     max-width: 30rem;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
   }
 
   .header {
@@ -17,7 +17,7 @@
   .buscar {
     width: 30rem;
     height: 3rem;
-    margin-top: .5rem;
+    margin-top: .3rem;
   }
 
   .buscar--texto input {
@@ -94,16 +94,119 @@
   }
 
   .modal {
-    min-width: 30rem;
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .modal__text {
+    font-size: 1.5rem;
   }
 
   .footer {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
+    padding: 0;
   }
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (max-width: 75em) {
   .head {
     padding-top: 1rem;
   }
+
+  .apresentacao {
+    max-width: 50rem;
+    margin-bottom: .2rem;
+  }
+
+  .header {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .buscar {
+    width: 30rem;
+    height: 3rem;
+    margin-top: .3rem;
+  }
+
+  .buscar--texto input {
+    width: 20rem;
+    font-size: 1.5rem;
+    margin-left: .5rem;
+  }
+
+  .btn--buscar {
+    height: 2rem;
+    width: 5rem;
+    font-size: 1rem;
+  }
+
+  .foto--perfil img {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .github--nome {
+    font-size: 1.5rem;
+  }
+
+  .gitBio {
+    margin-top: 1rem;
+  }
+
+  .github--bio {
+    font-size: 1.5rem;
+  }
+
+  .github--repo {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+
+  }
+
+  .repos {
+    /* flex-direction: row; */
+  }
+
+  .repositorio, .seguidores, .seguindo {
+    margin-right: 1rem;
+  }
+
+  .social--media {
+    font-size: 1.2rem;
+  }
+
+  .local, .twitter, .portifolio, .empresa {
+    padding: .2rem;
+  }
+
+  .githubHead {
+    flex-direction: row;
+  }
+
+  
+
+  .social--media {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+
+  .modal {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .modal__text {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
 }
