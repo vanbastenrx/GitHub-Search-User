@@ -76,7 +76,7 @@ const renderUser = data => {
   userName.innerHTML = !data.login ? userNotExist() : `@${data.login}`;
   bio.innerHTML = !data.bio ? biographStatus : data.bio;
   
-  portifolio.innerHTML = data.html_url;
+  portifolio.innerHTML = data.html_url.slice(8);
   local.innerHTML = !data.location ? status : data.location;
   work.innerHTML = !data.company ? companyStatus : data.company;
   twitter.innerHTML = !data.twitter_username ? status : data.twitter_username;
