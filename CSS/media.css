@@ -7,6 +7,7 @@
   .apresentacao {
     max-width: 30rem;
     margin-bottom: .2rem;
+    margin: 2rem 2rem;
   }
 
   .header {
@@ -164,9 +165,6 @@
 
   }
 
-  .repos {
-    /* flex-direction: row; */
-  }
 
   .repositorio, .seguidores, .seguindo {
     margin-right: 1rem;
