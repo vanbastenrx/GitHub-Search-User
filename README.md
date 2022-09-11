@@ -10,4 +10,4 @@ Uma tela simples com HTML CSS e JS puro usando a API do github para buscar usuá
 https://vanbastenrx.github.io/GitHub-Search-User/
 <br>
 
-![image](https://user-images.githubusercontent.com/77644858/183771862-13db4d5f-4787-438a-8683-174e861eef4d.png)
+![image](https://user-images.githubusercontent.com/77644858/189505861-cb0a3cad-d985-41f0-996a-e6ba3e9d2d0b.png)
