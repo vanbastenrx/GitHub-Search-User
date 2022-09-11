@@ -90,6 +90,8 @@ const renderUser = data => {
   following.innerHTML = data.following;
 };
 
+window.onload = githubUser('github');
+
 // Input + botão
 btn.addEventListener('submit', (e) => {
   e.preventDefault();
