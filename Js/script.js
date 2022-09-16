@@ -92,11 +92,13 @@ const renderUser = data => {
 
 window.onload = githubUser('github');
 
+
 // Input + botão
 btn.addEventListener('submit', (e) => {
   e.preventDefault();
   input.value === '' ? false : 
-  githubUser(input.value.toLowerCase());
+    githubUser(input.value.toLowerCase());
   input.value = '';
   input.placeholder = 'Buscar usuário...';
 });
+
