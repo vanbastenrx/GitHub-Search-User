@@ -56,6 +56,7 @@ btnModal.addEventListener('click', (e) => {
   e.preventDefault();
   popup.style.opacity = 0;
   popup.style.visibility = 'hidden';
+  githubUser('github');
 });
 
 
